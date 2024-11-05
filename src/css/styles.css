@@ -45,3 +45,28 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* app styles */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+header {
+  padding: 16px;
+  background-color: #f3f3f3;
+}
+
+footer {
+  padding: 16px;
+  background-color: #f3f3f3;
+}
+
+div.main {
+  flex: 1;
+  background-color: #eaeaea;
+  padding: 16px;
+}
