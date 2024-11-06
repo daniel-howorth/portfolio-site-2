@@ -58,6 +58,8 @@ h6 {
 header {
   padding: 16px;
   background-color: #f3f3f3;
+  position: sticky;
+  top: 0;
 }
 
 footer {
