@@ -51,6 +51,7 @@ h6 {
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-offwhite: #eaeaea;
 }
 
 /* app styles */
@@ -72,15 +73,17 @@ header {
 
 footer {
   padding: 16px;
-  background-color: #f3f3f3;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 div.main {
   flex: 1;
-  background-color: #eaeaea;
+  background-color: var(--color-white);
 }
 
 .page-section {
   min-height: 100vh;
   min-height: 100svh;
+  background-color: var(--color-white);
 }
