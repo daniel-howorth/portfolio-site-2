@@ -52,6 +52,12 @@ h6 {
   --color-black: #000000;
   --color-white: #ffffff;
   --font-stack-sansserif: "Jost", "Poppins", "Segoe UI", Verdana, sans-serif;
+  --font-size-base: 1.25rem;
+  --font-size-small: 1.125rem;
+  --font-size-large: 1.375;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 2rem;
 }
 
 /* app styles */
@@ -73,24 +79,18 @@ div.main {
   min-height: 100svh;
 }
 
-p {
+body {
   font-family: var(--font-stack-sansserif);
   font-weight: 400;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-li {
-  font-family: var(--font-stack-sansserif);
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-size: var(--font-size-base);
 }
 
 /* header styles */
 
 header {
-  padding: 16px;
+  padding: 24px;
   position: sticky;
   top: 0;
   background-color: var(--color-black);
@@ -112,10 +112,11 @@ nav.header-nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 16px;
+  gap: 1.5rem;
 }
 
 nav.header-nav li {
+  font-size: var(--font-size-base);
 }
 
 nav.header-nav a {
@@ -128,6 +129,32 @@ nav.header-nav a {
 footer {
   padding: 16px;
   background-color: #f3f3f3;
+}
+
+/***** TABLET STYLES *****/
+
+@media (max-width: calc(1100 / 16 * 1rem)) {
+  :root {
+    --font-size-base: 1.125rem;
+    --font-size-small: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+  }
+}
+
+/***** MOBILE STYLES *****/
+
+@media (max-width: calc(550 / 16 * 1rem)) {
+  :root {
+    --font-size-base: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-large: 1.125rem;
+    --font-size-h1: 1.5rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1.125rem;
+  }
 }
 
 /* helper classes */
