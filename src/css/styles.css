@@ -51,6 +51,7 @@ h6 {
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-accent: #ffd700;
   --font-stack-sansserif: "Jost", "Poppins", "Segoe UI", Verdana, sans-serif;
   --font-size-base: 1.25rem;
   --font-size-small: 1.125rem;
@@ -105,14 +106,11 @@ header {
   color: inherit;
 }
 
-nav.header-nav {
-}
-
 nav.header-nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: clamp(1.5rem, 10vw - 1rem, 5rem);
 }
 
 nav.header-nav li {
