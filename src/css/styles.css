@@ -51,7 +51,7 @@ h6 {
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-accent: #ffd700;
+  --color-accent: goldenrod;
   --color-gray-50: hsl(210deg, 19%, 10%);
   --color-gray-200: hsl(210deg, 15%, 25%);
   --color-gray-400: hsl(210deg, 9%, 45%);
@@ -123,6 +123,19 @@ nav.header-nav ul {
 
 nav.header-nav li {
   font-size: var(--font-size-base);
+  position: relative;
+}
+
+nav.header-nav li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s;
+  border-radius: 100vmax;
 }
 
 nav.header-nav a {
@@ -137,6 +150,12 @@ nav.header-nav a {
 
 .header-social-links a {
   width: var(--icon-size-small);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  nav.header-nav li:hover:after {
+    width: 100%;
+  }
 }
 
 /* footer styles*/
