@@ -249,6 +249,12 @@ nav.header-nav a {
   text-decoration: none;
 }
 
+@media (min-width: calc(550 / 16 * 1rem)) {
+  .dropdown-menu.active {
+    display: none;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .header-wrapper nav li:hover:after {
     width: 100%;
