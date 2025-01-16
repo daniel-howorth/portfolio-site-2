@@ -72,6 +72,14 @@ h6 {
 
 /* app styles */
 
+body {
+  font-family: var(--font-stack-sansserif);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .app-wrapper {
   display: flex;
   flex-direction: column;
@@ -87,14 +95,6 @@ div.main {
 .page-section {
   min-height: 100vh;
   min-height: 100svh;
-}
-
-body {
-  font-family: var(--font-stack-sansserif);
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: var(--font-size-base);
 }
 
 /* header styles */
@@ -133,6 +133,7 @@ nav.header-nav li {
   position: relative;
 }
 
+/* underlines for hover animation */
 .header-wrapper nav li::after {
   content: "";
   width: 0;
@@ -303,10 +304,6 @@ footer {
   .header-social-links {
     display: none;
   }
-
-  /* #header-menu-btn {
-    display: block;
-  } */
 
   #header-menu-btn {
     display: flex;
