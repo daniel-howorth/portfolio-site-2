@@ -49,11 +49,6 @@ h6 {
 /* variables */
 
 :root {
-<<<<<<< HEAD
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-offwhite: #eaeaea;
-=======
   --color-black: hsl(0, 0%, 0%);
   --color-white: hsl(0, 0%, 100%);
   --color-accent: hsl(43, 74%, 49%);
@@ -74,7 +69,6 @@ h6 {
   --icon-size-small: 2rem;
   --icon-size-medium: 3rem;
   --icon-size-large: 4rem;
->>>>>>> header
 }
 
 /* app styles */
@@ -94,23 +88,6 @@ body {
   min-height: 100svh;
 }
 
-<<<<<<< HEAD
-header {
-  padding: 16px;
-  position: sticky;
-  top: 0;
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-footer {
-  padding: 16px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
-=======
->>>>>>> header
 div.main {
   flex: 1;
   background-color: var(--color-white);
