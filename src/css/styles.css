@@ -65,6 +65,7 @@ h6 {
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
   --font-size-h3: 2rem;
+  --icon-size-xsmall: 1.75rem;
   --icon-size-small: 2rem;
   --icon-size-medium: 3rem;
   --icon-size-large: 4rem;
@@ -151,19 +152,29 @@ nav.header-nav a {
   text-decoration: none;
 }
 
-.header-social-links {
+.social-links {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.header-social-links a {
+.social-links a {
   width: var(--icon-size-small);
 }
 
-.header-social-links a svg {
+.social-links a svg {
   width: 100%;
   height: 100%;
   transition: stroke 0.2s;
+}
+
+.social-links.header-dropdown-social-links {
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* check tap target size on mobile */
+.social-links.header-dropdown-social-links a {
+  width: var(--icon-size-xsmall);
 }
 
 #header-menu-btn {
@@ -227,7 +238,7 @@ nav.header-nav a {
 
 .dropdown-menu nav.dropdown-nav {
   width: fit-content;
-  margin: 24px auto;
+  margin: 24px auto 2.5rem;
 }
 
 .dropdown-menu nav.dropdown-nav ul {
@@ -260,7 +271,7 @@ nav.header-nav a {
     width: 100%;
   }
 
-  .header-social-links a svg:hover {
+  .social-links a svg:hover {
     stroke: var(--color-accent);
   }
 
