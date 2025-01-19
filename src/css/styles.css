@@ -124,6 +124,7 @@ header {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
+  transition: color 0.2s;
 }
 
 nav.header-nav ul {
@@ -271,7 +272,11 @@ nav.header-nav a {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .header-wrapper nav li:hover:after {
+  #home-btn:hover {
+    color: var(--color-accent);
+  }
+
+  header .header-nav li:hover:after {
     width: 100%;
   }
 
