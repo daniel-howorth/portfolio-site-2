@@ -347,3 +347,48 @@ footer {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+/* typing animation */
+
+#home-btn {
+  line-height: 1;
+}
+
+.typed-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-white);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.2s steps(14, end), blink-caret 0.75s step-end infinite,
+    hide-caret 0s 4s forwards;
+  padding-right: 0.15em;
+}
+
+/*  typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* blinking cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-white);
+  }
+}
+
+/* hide cursor at end of animation */
+@keyframes hide-caret {
+  to {
+    border-color: transparent;
+  }
+}
