@@ -1,40 +1,42 @@
 const headerMenuBtn = document.querySelector("#header-menu-btn");
-const dropdownMenu = document.querySelector(".dropdown-menu");
+const headerDropdownMenu = document.querySelector(".dropdown-menu");
 const headerDropdownMenuNavLinks = document.querySelectorAll(
   "#header-dropdown-menu nav.dropdown-nav li"
 );
 
-headerMenuBtn.addEventListener("click", handleHeaderMenuButtonClick);
+headerMenuBtn.addEventListener("click", () =>
+  handleDropdownBtnClick(headerMenuBtn, headerDropdownMenu)
+);
 headerDropdownMenuNavLinks.forEach((navLink) =>
   navLink.addEventListener("click", handleHeaderDropdownNavLinkClick)
 );
 
-function handleHeaderMenuButtonClick() {
-  toggleHeaderMenuButtonState();
-  toggleDropdownMenu();
+function handleDropdownBtnClick(dropdownBtn, dropdown) {
+  toggleDropdownBtnState(dropdownBtn);
+  toggleDropdown(dropdown);
 }
 
-function toggleDropdownMenu() {
+function toggleDropdown(dropdown) {
   // set will-change on max-height to optimise animation
-  dropdownMenu.style.willChange = "max-height";
+  dropdown.style.willChange = "max-height";
 
-  dropdownMenu.classList.toggle("active");
+  dropdown.classList.toggle("active");
 
   // unset will-change property to release GPU resources
-  dropdownMenu.addEventListener(
+  dropdown.addEventListener(
     "transitionend",
     () => {
-      dropdownMenu.style.willChange = "auto";
+      dropdown.style.willChange = "auto";
     },
     { once: true }
   );
 }
 
-function toggleHeaderMenuButtonState() {
-  headerMenuBtn.classList.toggle("active");
+function toggleDropdownBtnState(dropdownBtn) {
+  dropdownBtn.classList.toggle("active");
   // toggle aria-expanded to notify screen-readers of dropdown state
-  const isExpanded = headerMenuBtn.getAttribute("aria-expanded") === "true";
-  headerMenuBtn.setAttribute("aria-expanded", !isExpanded);
+  const isExpanded = dropdownBtn.getAttribute("aria-expanded") === "true";
+  dropdownBtn.setAttribute("aria-expanded", !isExpanded);
 }
 
 function handleHeaderDropdownNavLinkClick() {
