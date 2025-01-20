@@ -71,7 +71,7 @@ h6 {
   --icon-size-large: 4rem;
 }
 
-/* app styles */
+/* === App Styles === */
 
 body {
   font-family: var(--font-stack-sansserif);
@@ -99,7 +99,7 @@ div.main {
   background-color: var(--color-white);
 }
 
-/* header styles */
+/* === Header Styles === */
 
 .header-wrapper {
   position: sticky;
@@ -125,6 +125,18 @@ header {
   text-decoration: none;
   color: inherit;
   transition: color 0.2s;
+  line-height: 1;
+}
+
+#home-btn .typed-text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-white);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 1.2s steps(14, end), blink-caret 0.75s step-end infinite,
+    hide-caret 0s 4s forwards;
+  padding-right: 0.15em;
 }
 
 nav.header-nav ul {
@@ -289,14 +301,14 @@ nav.header-nav a {
   }
 }
 
-/* footer styles*/
+/* === Footer Styles === */
 
 footer {
   padding: 16px;
   background-color: hsl(0, 0%, 95%);
 }
 
-/***** TABLET STYLES *****/
+/* === Tablet Styles === */
 
 @media (max-width: calc(1100 / 16 * 1rem)) {
   :root {
@@ -309,7 +321,7 @@ footer {
   }
 }
 
-/***** MOBILE STYLES *****/
+/* === Mobile Styles === */
 
 @media (max-width: calc(550 / 16 * 1rem)) {
   :root {
@@ -336,7 +348,7 @@ footer {
   }
 }
 
-/* helper classes */
+/* === Helper Classes === */
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -348,22 +360,9 @@ footer {
   white-space: nowrap;
 }
 
-/* typing animation */
+/* === Animations === */
 
-#home-btn {
-  line-height: 1;
-}
-
-.typed-text {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 0.15em solid var(--color-white);
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 1.2s steps(14, end), blink-caret 0.75s step-end infinite,
-    hide-caret 0s 4s forwards;
-  padding-right: 0.15em;
-}
+/* *** typing animation *** */
 
 /*  typing effect */
 @keyframes typing {
