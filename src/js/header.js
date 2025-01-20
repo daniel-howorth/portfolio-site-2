@@ -1,3 +1,4 @@
+const homeBtn = document.querySelector("#home-btn");
 const headerMenuBtn = document.querySelector("#header-menu-btn");
 const headerDropdownMenu = document.querySelector(".dropdown-menu");
 const headerDropdownMenuNavLinks = document.querySelectorAll(
@@ -8,7 +9,12 @@ headerMenuBtn.addEventListener("click", () =>
   handleDropdownBtnClick(headerMenuBtn, headerDropdownMenu)
 );
 headerDropdownMenuNavLinks.forEach((navLink) =>
-  navLink.addEventListener("click", handleHeaderDropdownNavLinkClick)
+  navLink.addEventListener("click", () =>
+    handleCloseDropdown(headerMenuBtn, headerDropdownMenu)
+  )
+);
+homeBtn.addEventListener("click", () =>
+  handleCloseDropdown(headerMenuBtn, headerDropdownMenu)
 );
 
 function handleDropdownBtnClick(dropdownBtn, dropdown) {
@@ -39,28 +45,28 @@ function toggleDropdownBtnState(dropdownBtn) {
   dropdownBtn.setAttribute("aria-expanded", !isExpanded);
 }
 
-function handleHeaderDropdownNavLinkClick() {
-  closeHeaderDropdownMenu();
-  setHeaderMenuBtnStateNotActive();
+function handleCloseDropdown(dropdownBtn, dropdown) {
+  closeDropdown(dropdown);
+  setDropdownBtnStateNotActive(dropdownBtn);
 }
 
-function closeHeaderDropdownMenu() {
-  dropdownMenu.style.willChange = "max-height";
+function closeDropdown(dropdown) {
+  dropdown.style.willChange = "max-height";
 
-  dropdownMenu.classList.remove("active");
+  dropdown.classList.remove("active");
 
   // unset will-change property to release GPU resources
-  dropdownMenu.addEventListener(
+  dropdown.addEventListener(
     "transitionend",
     () => {
-      dropdownMenu.style.willChange = "auto";
+      dropdown.style.willChange = "auto";
     },
     { once: true }
   );
 }
 
-function setHeaderMenuBtnStateNotActive() {
-  headerMenuBtn.classList.remove("active");
+function setDropdownBtnStateNotActive(dropdownBtn) {
+  dropdownBtn.classList.remove("active");
   // set aria-expanded to false to notify screen-readers of dropdown state
-  headerMenuBtn.setAttribute("aria-expanded", false);
+  dropdownBtn.setAttribute("aria-expanded", false);
 }
