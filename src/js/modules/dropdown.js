@@ -26,8 +26,10 @@ function toggleDropdownBtnState(dropdownBtn) {
 }
 
 function handleCloseDropdown(dropdownBtn, dropdown) {
-  closeDropdown(dropdown);
-  setDropdownBtnStateNotActive(dropdownBtn);
+  if (dropdown.classList.contains("active")) {
+    closeDropdown(dropdown);
+    setDropdownBtnStateNotActive(dropdownBtn);
+  }
 }
 
 function closeDropdown(dropdown) {
