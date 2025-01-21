@@ -1,4 +1,4 @@
-import Dropdown from "./modules/dropdown.js";
+import Dropdown from "../modules/dropdown.js";
 
 const homeBtn = document.querySelector("#home-btn");
 const headerMenuBtn = document.querySelector("#header-menu-btn");
