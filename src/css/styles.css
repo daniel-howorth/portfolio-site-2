@@ -113,6 +113,13 @@ div.main {
   background-color: var(--color-black);
   color: var(--color-white);
   box-shadow: 1px 2px 6px var(--color-black);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .header-wrapper {
+    font-size: 1.25rem;
+  }
 }
 
 header {
@@ -124,11 +131,11 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 #home-btn {
   font-family: "Space Mono", serif;
-  font-size: var(--font-size-medium);
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -147,16 +154,17 @@ header {
   padding-right: 0.15em;
 }
 
+nav.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 nav.header-nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
   gap: clamp(1.5rem, 10vw - 1rem, 5rem);
-}
-
-nav.header-nav li {
-  font-size: var(--font-size-medium);
-  position: relative;
 }
 
 /* underlines for hover animation */
@@ -170,6 +178,10 @@ nav.header-nav li {
   left: 0;
   transition: width 0.2s;
   border-radius: 100vmax;
+}
+
+.header-wrapper nav li {
+  position: relative;
 }
 
 nav.header-nav a {
@@ -288,11 +300,6 @@ nav.header-nav a {
   flex-direction: column;
   align-items: center;
   gap: 1.125rem;
-}
-
-.dropdown-menu nav.dropdown-nav li {
-  font-size: var(--font-size-medium);
-  position: relative;
 }
 
 .dropdown-menu nav.dropdown-nav a {
