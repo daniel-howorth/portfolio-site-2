@@ -341,6 +341,63 @@ nav.header-nav a {
 
 /* === Intro Section === */
 
+#introduction-content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#introduction-txt-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction-txt {
+  font-size: 6rem;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
+#introduction-name {
+  font-family: "Quentin", var(--font-stack-sansserif);
+  font-weight: 500;
+}
+
+#profile-img-container {
+  flex: 1;
+}
+
+#profile-img {
+  width: 400px;
+  min-width: 400px;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+}
+
+#profile-img img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: calc(1260 / 16 * 1rem)) {
+  #introduction-content-container {
+    flex-direction: column;
+  }
+
+  #introduction-txt {
+    text-align: center;
+  }
+}
+
 /* === Footer Styles === */
 
 .footer-wrapper {
@@ -369,64 +426,6 @@ footer {
 }
 
 /* === Utility Classes === */
-
-.u-margin-top-lg {
-  margin-top: 2.5rem;
-}
-
-.u-flexbox-row-fullwidth {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.u-flexbox-wrap {
-  flex-wrap: wrap;
-}
-
-.u-flexbox-gap-lg {
-  gap: 2.5rem;
-}
-
-#introduction-txt-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#introduction-txt {
-  font-size: 6rem;
-  min-width: fit-content;
-  white-space: nowrap;
-  /* text-align: center; */
-}
-
-#introduction-name {
-  font-family: "Quentin", var(--font-stack-sansserif);
-  font-weight: 500;
-}
-
-#profile-img-container {
-  flex: 1;
-}
-
-#profile-img {
-  width: 400px;
-  min-width: 400px;
-  aspect-ratio: 1/1;
-  border: 3px solid black;
-  border-radius: 50%;
-  overflow: hidden;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
-}
-
-#profile-img img {
-  width: 100%;
-  max-width: 100%;
-  object-fit: cover;
-}
 
 .u-flex-items-centred {
   display: flex;
