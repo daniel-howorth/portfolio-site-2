@@ -393,6 +393,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
+  align-items: flex-start;
 }
 
 #introduction-txt {
@@ -411,9 +412,10 @@ footer {
 #profile-img {
   width: 400px;
   aspect-ratio: 1/1;
-  border: 2px solid green;
+  border: 3px solid black;
   border-radius: 50%;
   overflow: hidden;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
 }
 
 #profile-img img {
