@@ -125,6 +125,7 @@ div.main {
   color: var(--color-white);
   box-shadow: 1px 2px 6px var(--color-black);
   font-size: 1.5rem;
+  z-index: 1000;
 }
 
 @media (max-width: 1000px) {
@@ -357,14 +358,6 @@ footer {
 /* === Tablet Styles === */
 
 @media (max-width: calc(1100 / 16 * 1rem)) {
-  /* :root {
-    --font-size-base: 1.125rem;
-    --font-size-small: 1rem;
-    --font-size-large: 1.25rem;
-    --font-size-h1: 2rem;
-    --font-size-h2: 1.75rem;
-    --font-size-h3: 1.5rem;
-  } */
 }
 
 /* === Mobile Styles === */
@@ -387,17 +380,27 @@ footer {
   width: 100%;
 }
 
+.u-flexbox-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flexbox-gap-lg {
+  gap: 2.5rem;
+}
+
 #introduction-txt-container {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  align-items: flex-start;
+  align-items: center;
 }
 
 #introduction-txt {
   font-size: 4.5rem;
+  min-width: fit-content;
+  white-space: nowrap;
+  /* text-align: center; */
 }
 
 #introduction-name {
@@ -411,6 +414,7 @@ footer {
 
 #profile-img {
   width: 400px;
+  min-width: 400px;
   aspect-ratio: 1/1;
   border: 3px solid black;
   border-radius: 50%;
