@@ -397,7 +397,7 @@ footer {
 }
 
 #introduction-txt {
-  font-size: 4.5rem;
+  font-size: 6rem;
   min-width: fit-content;
   white-space: nowrap;
   /* text-align: center; */
@@ -428,13 +428,13 @@ footer {
   object-fit: cover;
 }
 
-.flex-items-centred {
+.u-flex-items-centred {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.txt-left {
+.u-txt-left {
   text-align: left;
 }
 
