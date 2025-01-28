@@ -46,6 +46,8 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* === App Styles === */
+
 /* variables */
 
 :root {
@@ -72,7 +74,16 @@ h6 {
   --icon-size-large: 4rem;
 }
 
-/* === App Styles === */
+/* fonts */
+
+@font-face {
+  font-family: "Quentin";
+  src: url("../assets/fonts/Quentin.woff2") format("woff2"),
+    url("../assets/fonts/Quentin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: var(--font-stack-sansserif);
@@ -102,7 +113,7 @@ div.main {
   min-height: 100vh;
   min-height: 100svh;
   background-color: var(--color-white);
-  padding: 0 24px;
+  padding: 80px 24px;
 }
 
 /* === Header Styles === */
@@ -208,11 +219,6 @@ nav.header-nav a {
   justify-content: center;
   margin-bottom: 24px;
 }
-
-/* check tap target size on mobile */
-/* .social-links.header-dropdown-social-links a {
-  width: var(--icon-size-small);
-} */
 
 #header-menu-btn {
   display: none;
@@ -332,6 +338,8 @@ nav.header-nav a {
   }
 }
 
+/* === Intro Section === */
+
 /* === Footer Styles === */
 
 .footer-wrapper {
@@ -367,7 +375,47 @@ footer {
   }
 }
 
-/* === Helper Classes === */
+/* === Utility Classes === */
+
+.u-margin-top-lg {
+  margin-top: 2.5rem;
+}
+
+.u-flexbox-row-fullwidth {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#introduction-txt-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#introduction-txt {
+  font-size: 4.5rem;
+}
+
+#introduction-name {
+  font-family: "Quentin", var(--font-stack-sansserif);
+  font-weight: 500;
+}
+
+#profile-img-container {
+  flex: 1;
+}
+
+.flex-items-centred {
+  justify-content: center;
+  align-items: center;
+}
+
+.txt-left {
+  text-align: left;
+}
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
