@@ -110,8 +110,7 @@ div.main {
 }
 
 .page-section {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: min(100vh, 650px);
   background-color: var(--color-white);
   padding: 80px 24px;
 }
