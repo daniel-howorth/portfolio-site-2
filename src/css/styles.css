@@ -143,6 +143,7 @@ header {
   align-items: center;
   margin: 0 auto;
   position: relative;
+  overflow: auto;
 }
 
 #home-btn {
@@ -226,11 +227,13 @@ nav.header-nav a {
   justify-content: space-around;
   align-items: center;
   width: var(--icon-size-small);
+  min-width: var(--icon-size-small);
   aspect-ratio: 1/1;
   background: inherit;
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-left: 16px;
 }
 
 #header-menu-btn:focus {
@@ -394,6 +397,34 @@ nav.header-nav a {
 
   #introduction-txt {
     text-align: center;
+  }
+}
+
+@media (max-width: calc(800 / 16 * 1rem)) {
+  #introduction-txt {
+    font-size: clamp(2rem, 10vw, 5rem);
+  }
+
+  #profile-img {
+    width: clamp(12.5rem, 65vw, 21.875rem);
+    min-width: clamp(12.5rem, 65vw, 21.875rem);
+  }
+}
+
+@media (max-width: calc(300 / 16 * 1rem)) {
+  #introduction-txt {
+    min-width: min-content;
+    white-space: wrap;
+  }
+}
+
+@media (max-width: calc(270 / 16 * 1rem)) {
+  #profile-img-container {
+    display: none;
+  }
+
+  #intro-section {
+    min-height: unset;
   }
 }
 
