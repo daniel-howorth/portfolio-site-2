@@ -372,8 +372,8 @@ nav.header-nav a {
 }
 
 #profile-img {
-  width: 400px;
-  min-width: 400px;
+  width: calc(400 / 16 * 1rem);
+  min-width: calc(400 / 16 * 1rem);
   aspect-ratio: 1/1;
   border: 3px solid black;
   border-radius: 50%;
