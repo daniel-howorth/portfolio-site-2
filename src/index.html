@@ -16,7 +16,6 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="./assets/images/headshot.webp" as="image" />
     <title>Daniel Howorth Portfolio</title>
   </head>
   <body>
@@ -172,12 +171,26 @@
               </p>
             </div>
             <div id="profile-img-container" class="u-flex-items-centred">
-              <div id="profile-img" class="u-flex-items-centred">
+              <picture id="profile-img" class="u-flex-items-centred">
+                <source
+                  srcset="
+                    ./assets/images/headshot-400.avif 1x,
+                    ./assets/images/headshot-800.avif 2x
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./assets/images/headshot-400.webp 1x,
+                    ./assets/images/headshot-800.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  src="./assets/images/headshot.webp"
+                  src="./assets/images/headshot-400.jpg"
                   alt="Daniel Howorth profile image"
                 />
-              </div>
+              </picture>
             </div>
           </div>
         </section>

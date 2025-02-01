@@ -161,7 +161,7 @@ header {
   border-right: 0.15em solid var(--color-white);
   white-space: nowrap;
   margin: 0 auto;
-  animation: typing 1.2s steps(14, end), blink-caret 0.75s step-end infinite,
+  animation: typing 1.5s steps(14, end), blink-caret 0.75s step-end infinite,
     hide-caret 0s 4s forwards;
   padding-right: 0.15em;
 }
