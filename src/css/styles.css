@@ -99,6 +99,7 @@ body {
   min-height: 100vh;
   min-height: 100svh;
   background-color: var(--color-white);
+  min-width: 290px;
 }
 
 div.main {
@@ -415,16 +416,6 @@ nav.header-nav a {
   #introduction-txt {
     min-width: min-content;
     white-space: wrap;
-  }
-}
-
-@media (max-width: calc(270 / 16 * 1rem)) {
-  #profile-img-container {
-    display: none;
-  }
-
-  #intro-section {
-    min-height: unset;
   }
 }
 
