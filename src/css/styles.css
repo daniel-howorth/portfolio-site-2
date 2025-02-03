@@ -395,6 +395,7 @@ nav.header-nav a {
   width: 100%;
   max-width: 100%;
   object-fit: cover;
+  object-position: centre;
 }
 
 @media (max-width: calc(1260 / 16 * 1rem)) {
