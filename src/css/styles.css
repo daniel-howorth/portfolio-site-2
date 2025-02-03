@@ -344,12 +344,18 @@ nav.header-nav a {
 
 /* === Intro Section === */
 
+#intro-section {
+  height: 100vh;
+  max-height: 2000px;
+}
+
 #introduction-content-container {
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
   gap: 2.5rem;
+  margin-top: -80px;
 }
 
 #introduction-txt-container {
