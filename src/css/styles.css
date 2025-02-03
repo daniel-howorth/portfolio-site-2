@@ -419,6 +419,21 @@ nav.header-nav a {
   }
 }
 
+/* === About Styles === */
+
+.about-background-row {
+  display: flex;
+}
+
+.about-background-row > * {
+  flex: 1;
+}
+
+.about-background-img {
+  width: 100px;
+  max-width: 100px;
+}
+
 /* === Footer Styles === */
 
 .footer-wrapper {
@@ -452,6 +467,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.u-flex-column-fullwidth {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .u-txt-left {
