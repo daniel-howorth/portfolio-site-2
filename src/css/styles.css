@@ -406,11 +406,9 @@ nav.header-nav a {
   #introduction-txt {
     text-align: center;
   }
-}
 
-@media (max-width: calc(800 / 16 * 1rem)) {
   #introduction-txt {
-    font-size: clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 10vw, 4rem);
   }
 
   #profile-img {
