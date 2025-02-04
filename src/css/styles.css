@@ -111,9 +111,8 @@ div.main {
 }
 
 .page-section {
-  min-height: min(100vh, 650px);
   background-color: var(--color-white);
-  padding: 80px 24px;
+  padding: 80px 24px 24px;
 }
 
 /* === Header Styles === */
@@ -344,6 +343,16 @@ nav.header-nav a {
 
 /* === Intro Section === */
 
+#intro-section {
+  min-height: min(calc(100vh - 80px), 1200px);
+}
+
+@supports (height: 100dvh) {
+  #intro-section {
+    min-height: min(calc(100dvh - 80px), 1200px);
+  }
+}
+
 #introduction-content-container {
   display: flex;
   flex-direction: row;
@@ -389,6 +398,7 @@ nav.header-nav a {
   width: 100%;
   max-width: 100%;
   object-fit: cover;
+  object-position: centre;
 }
 
 @media (max-width: calc(1260 / 16 * 1rem)) {
@@ -399,11 +409,9 @@ nav.header-nav a {
   #introduction-txt {
     text-align: center;
   }
-}
 
-@media (max-width: calc(800 / 16 * 1rem)) {
   #introduction-txt {
-    font-size: clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 10vw, 4rem);
   }
 
   #profile-img {
