@@ -423,6 +423,7 @@ nav.header-nav a {
 
 .about-background-row {
   display: flex;
+  gap: clamp(2rem, 2vw, 5rem);
 }
 
 .about-background-row > * {
@@ -485,8 +486,8 @@ footer {
   width: 100%;
 }
 
-.u-flex-gap-lg {
-  gap: 1.5rem;
+.u-flex-gap-fluid {
+  gap: clamp(2rem, 5vw, 5rem);
 }
 
 .u-txt-left {
