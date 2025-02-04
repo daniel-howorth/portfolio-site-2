@@ -347,6 +347,12 @@ nav.header-nav a {
   min-height: min(calc(100vh - 80px), 1200px);
 }
 
+@supports (height: 100dvh) {
+  #intro-section {
+    min-height: min(calc(100dvh - 80px), 1200px);
+  }
+}
+
 #introduction-content-container {
   display: flex;
   flex-direction: row;
