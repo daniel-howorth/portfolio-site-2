@@ -435,9 +435,13 @@ nav.header-nav a {
 }
 
 .about-background-img {
-  /* width: 250px; */
-  /* width: 15vw; */
-  width: 150px;
+  width: clamp(12.5rem, 6.25rem + 14vw, 18.75rem);
+}
+
+@media (max-width: 1260px) {
+  .about-background-row {
+    flex-direction: column;
+  }
 }
 
 /* === Footer Styles === */
