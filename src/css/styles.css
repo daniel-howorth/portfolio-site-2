@@ -426,6 +426,10 @@ nav.header-nav a {
   gap: clamp(2rem, 2vw, 5rem);
 }
 
+.about-background-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .about-background-row > * {
   flex: 1;
 }
@@ -441,6 +445,10 @@ nav.header-nav a {
 
 @media (max-width: 1260px) {
   .about-background-row {
+    flex-direction: column;
+  }
+
+  .about-background-row:nth-child(even) {
     flex-direction: column;
   }
 }
