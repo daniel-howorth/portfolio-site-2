@@ -617,3 +617,16 @@ footer {
     border-color: transparent;
   }
 }
+
+/* fade up when in view */
+.fade-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1.5s ease-out, transform 0.6s ease-out;
+  /* will-change: opacity, transform; */
+}
+
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
