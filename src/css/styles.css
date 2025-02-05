@@ -52,7 +52,8 @@ h6 {
 
 :root {
   --color-black: hsl(0, 0%, 0%);
-  --color-white: hsl(0, 0%, 95%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-offwhite: hsl(0, 0%, 95%);
   --color-accent: hsl(43, 74%, 49%);
   --color-gray-50: hsl(210deg, 19%, 10%);
   --color-gray-200: hsl(210deg, 15%, 25%);
@@ -347,9 +348,9 @@ nav.header-nav a {
   min-height: min(calc(100vh - 80px), 1200px);
 }
 
-@supports (height: 100dvh) {
+@supports (height: 100svh) {
   #intro-section {
-    min-height: min(calc(100dvh - 80px), 1200px);
+    min-height: min(calc(100svh - 80px), 1200px);
   }
 }
 
