@@ -106,7 +106,7 @@ body {
   min-height: 100vh;
   min-height: 100svh;
   background-color: var(--color-white);
-  min-width: 290px;
+  min-width: 18.5rem;
 }
 
 div.main {
@@ -119,12 +119,17 @@ div.main {
 
 .page-section {
   background-color: var(--color-white);
-  padding: 5rem 1.5rem 1.5rem;
+  padding: 5rem 3rem 1.5rem;
+}
+
+.page-section-content-wrapper {
+  max-width: 1750px;
+  margin: auto;
 }
 
 .page-section-title {
   text-align: center;
-  margin-bottom: 5rem; /*rems?*/
+  margin-bottom: 5rem;
   font-size: 5rem;
   font-weight: 500;
   font-family: "Quentin", var(--font-stack-sansserif);
@@ -448,7 +453,7 @@ nav.header-nav a {
   object-position: centre;
 }
 
-@media (max-width: calc(1260 / 16 * 1rem)) {
+@media (max-width: calc(1310 / 16 * 1rem)) {
   #introduction-content-container {
     flex-direction: column;
   }
@@ -532,6 +537,10 @@ footer {
 @media (max-width: calc(550 / 16 * 1rem)) {
   :root {
     --font-size-medium: 1.5rem;
+  }
+
+  .page-section {
+    padding: 5rem 1.5rem 1.5rem;
   }
 }
 
@@ -618,14 +627,15 @@ footer {
   }
 }
 
-/* fade up when in view */
+/* *** fade up animation *** */
+
 .fade-up {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 1.5s ease-out, transform 0.6s ease-out;
-  /* will-change: opacity, transform; */
 }
 
+/* fade up when in view */
 .fade-up.in-view {
   opacity: 1;
   transform: translateY(0);
