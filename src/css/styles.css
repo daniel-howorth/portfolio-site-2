@@ -508,7 +508,7 @@ nav.header-nav a {
   flex-direction: row-reverse;
 }
 
-.about.txt-img-row__txt-cell {
+.about.txt-img-row__txt-cell p {
   font-size: 1.5rem;
 }
 
