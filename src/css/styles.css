@@ -54,7 +54,7 @@ h6 {
   --color-black: hsl(0, 0%, 0%);
   --color-white: hsl(0, 0%, 100%);
   --color-offwhite: hsl(0, 0%, 95%);
-  --color-accent: hsl(43, 74%, 49%);
+  --color-accent: hsl(44, 100%, 50%);
   --color-gray-50: hsl(210deg, 19%, 10%);
   --color-gray-200: hsl(210deg, 15%, 25%);
   --color-gray-400: hsl(210deg, 9%, 45%);
@@ -377,24 +377,6 @@ nav.header-nav a {
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  #home-btn:hover {
-    color: var(--color-accent);
-  }
-
-  .header-wrapper nav li:hover:after {
-    width: 100%;
-  }
-
-  .social-links a svg:hover {
-    stroke: var(--color-accent);
-  }
-
-  #header-menu-btn:hover .bar {
-    background-color: var(--color-accent);
-  }
-}
-
 /* === Intro Section === */
 
 #intro-section {
@@ -493,7 +475,7 @@ nav.header-nav a {
   flex: 1;
 }
 
-.txt-img-row__txt-cell p {
+.txt-img-row__txt-cell {
   font-size: 1.125rem;
   line-height: 1.75;
 }
@@ -534,13 +516,33 @@ nav.header-nav a {
   flex: 1.5;
 }
 
+.projects.txt-img-row__img-cell__img-wrapper {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
 .projects.txt-img-row__txt-cell {
-  text-align: left;
-  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0;
 }
 
 .projects.txt-img-row__txt-cell p {
   max-width: calc(450 / 16 * 1rem);
+}
+
+.view-project-btn {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: 5px;
+  border: none;
+  margin-top: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.21em 0.83em;
+  transition: color 0.2s;
+  cursor: pointer;
 }
 
 @media (max-width: calc(1000 / 16 * 1rem)) {
@@ -550,11 +552,16 @@ nav.header-nav a {
 
   .projects.txt-img-row__txt-cell {
     text-align: center;
+    align-items: center;
   }
 
   .projects.txt-img-row__txt-cell p {
     max-width: calc(630 / 16 * 1rem);
     margin: auto;
+  }
+
+  .view-project-btn {
+    margin-top: 32px;
   }
 }
 
@@ -590,6 +597,34 @@ footer {
 
   .page-section {
     padding: 5rem 1.5rem 1.5rem;
+  }
+}
+
+/* === Hover Styles === */
+
+@media (hover: hover) and (pointer: fine) {
+  #home-btn:hover {
+    color: var(--color-accent);
+  }
+
+  .header-wrapper nav li:hover:after {
+    width: 100%;
+  }
+
+  .social-links a svg:hover {
+    stroke: var(--color-accent);
+  }
+
+  #header-menu-btn:hover .bar {
+    background-color: var(--color-accent);
+  }
+
+  .projects.txt-img-row__img-cell__img-wrapper:hover {
+    transform: scale(1.05);
+  }
+
+  .view-project-btn:hover {
+    color: var(--color-accent);
   }
 }
 
