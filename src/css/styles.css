@@ -521,6 +521,11 @@ nav.header-nav a {
   transition: transform 0.3s ease-in-out;
 }
 
+#react-projects-placeholder {
+  cursor: auto;
+  transition: unset;
+}
+
 .projects.txt-img-row__txt-cell {
   display: flex;
   flex-direction: column;
@@ -621,6 +626,10 @@ footer {
 
   .projects.txt-img-row__img-cell__img-wrapper:hover {
     transform: scale(1.05);
+  }
+
+  #react-projects-placeholder {
+    transform: unset;
   }
 
   .view-project-btn:hover {
