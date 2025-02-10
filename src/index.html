@@ -294,12 +294,30 @@
                   class="projects txt-img-row__img-cell u-flex-items-centred"
                 >
                   <!-- add project link -->
-                  <div class="projects txt-img-row__img-cell__img-wrapper">
-                    <img
-                      src="./assets/images/projects/nutrition-app/laptop/mediamodifier_image.jpeg"
-                      alt=""
+                  <picture class="projects txt-img-row__img-cell__img-wrapper">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/login/laptop/avif/nutrition-login-1x.avif,
+                        ./assets/images/projects/nutrition-app/login/laptop/avif/nutrition-login-2x.avif
+                      "
                     />
-                  </div>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/login/laptop/webp/nutrition-login-1x.webp,
+                        ./assets/images/projects/nutrition-app/login/laptop/webp/nutrition-login-2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/login/laptop/jpg/nutrition-login-1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/login/laptop/jpg/nutrition-login-1x.jpg,
+                        ./assets/images/projects/nutrition-app/login/laptop/jpg/nutrition-login-2x.jpg
+                      "
+                      alt="nutrition app login page"
+                    />
+                  </picture>
                 </div>
                 <div class="projects txt-img-row__txt-cell">
                   <h2>Nutrition App</h2>
@@ -321,16 +339,16 @@
                   class="projects txt-img-row__img-cell u-flex-items-centred"
                 >
                   <div class="projects txt-img-row__img-cell__img-wrapper">
-                    <img
+                    <!-- <img
                       src="./assets/images/projects/nutrition-app/laptop/mediamodifier_image.jpeg"
                       alt=""
-                    />
+                    /> -->
                   </div>
                 </div>
                 <div class="projects txt-img-row__txt-cell">
                   <h2>Coming soon!</h2>
                   <p>
-                    I'm currently improving my React skills aim to release some
+                    I'm currently improving my React skills will be releasing
                     React projects soon. Watch this space!
                   </p>
                 </div>
