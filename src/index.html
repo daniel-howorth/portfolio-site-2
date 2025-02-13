@@ -400,7 +400,7 @@
                   <input
                     type="text"
                     id="input__sender-name"
-                    class="contact-form__input"
+                    class="contact-form__input tap-target"
                     name="sender-name"
                     required
                 /></label>
@@ -409,10 +409,20 @@
                   <input
                     type="email"
                     id="input__sender-email"
-                    class="contact-form__input"
+                    class="contact-form__input tap-target"
                     name="sender-email"
                     required
                 /></label>
+                <label class="contact-form__label" for="input__sender-message"
+                  >Message<br />
+                  <textarea
+                    id="input__sender-message"
+                    class="contact-form__input tap-target"
+                    name="sender-message"
+                    rows="8"
+                    required
+                  ></textarea>
+                </label>
               </form>
             </article>
           </div>

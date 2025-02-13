@@ -575,10 +575,9 @@ nav.header-nav a {
 }
 
 .card--contact-form {
-  max-width: 750px;
+  max-width: calc(750 / 16 * 1rem);
   color: var(--color-white);
   background-color: var(--color-black);
-  font-size: var(--font-size-base);
   --background-color: var(--color-black);
   --label-color: var(--color-white);
   --alt-color: var(--color-accent);
