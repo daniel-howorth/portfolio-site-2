@@ -121,7 +121,7 @@ div.main {
 
 .page-section {
   background-color: var(--color-white);
-  padding: 5rem 3rem 1.5rem;
+  padding: 5rem 3rem;
 }
 
 .page-section-content-wrapper {
@@ -565,6 +565,45 @@ nav.header-nav a {
   }
 }
 
+/* === Contact Section Styles === */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 2rem;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+}
+
+.card--contact-form {
+  max-width: 750px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-size: var(--font-size-base);
+  --background-color: var(--color-black);
+  --label-color: var(--color-white);
+  --alt-color: var(--color-accent);
+}
+
+.contact-form__label {
+  display: block;
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form__input {
+  width: 100%;
+  font-size: var(--font-size-base);
+  padding: 0.75em;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+
+.contact-form__input:focus {
+  outline: 0.125em solid var(--alt-color);
+}
+
 /* === Footer Styles === */
 
 .footer-wrapper {
@@ -596,7 +635,7 @@ footer {
   }
 
   .page-section {
-    padding: 5rem 1.5rem 1.5rem;
+    padding: 5rem 1.5rem 5rem;
   }
 }
 
@@ -652,6 +691,11 @@ footer {
 
 .u-txt-left {
   text-align: left;
+}
+
+.u-centred {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
