@@ -463,7 +463,14 @@ nav.header-nav a {
   }
 }
 
-/* === text image row === */
+/* === Reusable Components === */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 2rem;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+}
 
 .txt-img-row {
   display: flex;
@@ -485,6 +492,26 @@ nav.header-nav a {
 
 .txt-img-row__img-wrapper {
   width: 100%;
+}
+
+.btn {
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: 0.2em 0.8em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn--medium {
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+}
+
+.btn--align-bottom {
+  margin-top: auto;
 }
 
 /* === About Styles === */
@@ -535,19 +562,6 @@ nav.header-nav a {
   margin-bottom: 32px;
 }
 
-.view-project-btn {
-  color: var(--color-white);
-  background-color: var(--color-black);
-  border-radius: 5px;
-  border: none;
-  margin-top: auto;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.21em 0.83em;
-  transition: color 0.2s;
-  cursor: pointer;
-}
-
 @media (max-width: calc(1000 / 16 * 1rem)) {
   .txt-img-row--projects {
     flex-direction: column;
@@ -567,20 +581,13 @@ nav.header-nav a {
 
 /* === Contact Section Styles === */
 
-.card {
-  background-color: var(--color-white);
-  border-radius: 5px;
-  padding: 2rem;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
-}
-
 .card--contact-form {
   max-width: calc(750 / 16 * 1rem);
-  color: var(--color-white);
-  background-color: var(--color-black);
-  --background-color: var(--color-black);
-  --label-color: var(--color-white);
-  --alt-color: var(--color-accent);
+  --color-primary: var(--color-black);
+  --color-secondary: var(--color-white);
+  --color-alt: var(--color-accent);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .contact-form__label {
@@ -600,7 +607,13 @@ nav.header-nav a {
 }
 
 .contact-form__input:focus {
-  outline: 0.125em solid var(--alt-color);
+  outline: 0.125em solid var(--color-alt);
+}
+
+.card--contact-form .btn {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  transition: background-color 0.2s;
 }
 
 /* === Footer Styles === */
@@ -661,8 +674,13 @@ footer {
     transform: scale(1.05);
   }
 
-  .view-project-btn:hover {
+  .btn:hover {
     color: var(--color-accent);
+  }
+
+  .card--contact-form .btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-alt);
   }
 }
 
