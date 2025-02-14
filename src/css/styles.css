@@ -517,7 +517,7 @@ nav.header-nav a {
 }
 
 .txt-img-row--about .txt-img-row__cell--txt {
-  font-size: var(--font-size-large);
+  font-size: max(var(--font-size-large), 1.375rem);
 }
 
 .txt-img-row--about .txt-img-row__img-wrapper {
@@ -547,6 +547,7 @@ nav.header-nav a {
 }
 
 .txt-img-row--projects .txt-img-row__cell--txt {
+  font-size: max(var(--font-size-medium), 1.125rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -656,6 +657,10 @@ footer {
 
   .page-section {
     padding: 5rem 1.5rem 1.5rem;
+  }
+
+  .page-section-title {
+    margin-bottom: 3rem;
   }
 }
 
