@@ -318,7 +318,7 @@ nav.header-nav a {
 }
 
 /* hide header nav, show menu button */
-@media (max-width: calc(800 / 16 * 1rem)) {
+@media (max-width: calc(900 / 16 * 1rem)) {
   nav.header-nav {
     display: none;
   }
@@ -578,7 +578,7 @@ nav.header-nav a {
 
 /* === Contact Section Styles === */
 
-.card--contact-form {
+.contact-form-card {
   max-width: calc(750 / 16 * 1rem);
   --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
