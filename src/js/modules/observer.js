@@ -11,18 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
           const el = entry.target;
 
           // add will-change just before animation
-          const willChangeProps = el.dataset.willChange;
-          if (willChangeProps) {
-            el.style.willChange = willChangeProps;
+          const willChange = el.dataset.willChange;
+          if (willChange) {
+            el.style.willChange = willChange;
           }
 
           entry.target.classList.add("in-view");
 
           // reset will-change after animation and remove listener
-          el.addEventListener("transitionend", function handleTransitionEnd() {
-            el.style.willChange = "auto";
-            el.removeEventListener("transitionend", handleTransitionEnd);
-          });
+          if (willChange) {
+            el.addEventListener(
+              "transitionend",
+              function handleTransitionEnd() {
+                el.style.willChange = "auto";
+                el.removeEventListener("transitionend", handleTransitionEnd);
+              }
+            );
+          }
 
           observer.unobserve(entry.target);
         }
@@ -34,6 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Observe fade-up elements.
   const fadeUpElements = document.querySelectorAll(".fade-up");
   fadeUpElements.forEach((element) => {
+    observer.observe(element);
+  });
+
+  // Observe jump elements
+  const jumpElements = document.querySelectorAll(".jump");
+  jumpElements.forEach((element) => {
     observer.observe(element);
   });
 });

@@ -46,6 +46,10 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a {
+  color: inherit;
+}
+
 /* === App Styles === */
 
 /* variables */
@@ -524,6 +528,10 @@ nav.header-nav a {
   font-weight: 500;
 }
 
+.link {
+  cursor: pointer;
+}
+
 /* === About Styles === */
 
 .txt-img-row--about:nth-child(even) {
@@ -536,6 +544,10 @@ nav.header-nav a {
 
 .txt-img-row--about .txt-img-row__img-wrapper {
   width: clamp(12.5rem, 6.25rem + 14vw, 18.75rem);
+}
+
+#lets-connect-link {
+  display: inline-block;
 }
 
 @media (max-width: calc(1260 / 16 * 1rem)) {
@@ -819,4 +831,31 @@ footer {
 .fade-up.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* *** jump animation *** */
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jump.in-view {
+  animation: jump 1s 2s;
 }
