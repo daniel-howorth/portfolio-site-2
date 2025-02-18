@@ -608,7 +608,7 @@ nav.header-nav a {
   outline: 0.125em solid var(--color-alt);
 }
 
-.card--contact-form .btn {
+.contact-form-card .btn {
   color: var(--color-primary);
   background-color: var(--color-secondary);
   transition: background-color 0.2s;
@@ -691,7 +691,7 @@ footer {
     color: var(--color-accent);
   }
 
-  .card--contact-form .btn:hover {
+  .contact-form-card .btn:hover {
     color: var(--color-primary);
     background-color: var(--color-alt);
   }
