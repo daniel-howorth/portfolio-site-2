@@ -23,8 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        el = entry.target;
-        willChange = getComputedStyle(el).willChange != "auto";
+        const el = entry.target;
+        let willChange = false;
+
+        // Dynamically add will-change properties before animation.
+        if (el.classList.contains("fade-up")) {
+          el.style.willChange = "opacity, transform";
+          willChange = true;
+        }
 
         el.classList.add("in-view");
 

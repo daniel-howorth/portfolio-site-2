@@ -674,6 +674,33 @@ footer {
   font-weight: 500;
 }
 
+/* === Skills Styles === */
+
+.grid {
+  display: grid;
+  max-width: 100%;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(4, 150px);
+  gap: 16px;
+  /* grid-auto-flow: row dense; */
+  place-content: center;
+}
+
+.skill {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: calc(((648 / 16) + 10) * 1rem)) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
 /* === Tablet Styles === */
 
 @media (max-width: calc(1100 / 16 * 1rem)) {
@@ -854,7 +881,7 @@ footer {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1.5s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform;
+  /* will-change: opacity, transform; */
 }
 
 /* fade up when in view */
