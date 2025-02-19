@@ -22,7 +22,11 @@
     <div class="app-wrapper">
       <div class="header-wrapper">
         <header>
-          <a href="#intro-section" id="home-btn" class="tap-target">
+          <a
+            href="#intro-section"
+            id="home-btn"
+            class="closeDropdownOnClick tap-target"
+          >
             <span class="typed-text">Daniel Howorth</span>
             <div class="visually-hidden">Home button</div>
           </a>
@@ -99,17 +103,31 @@
         <div class="dropdown-menu" id="header-dropdown-menu">
           <nav class="dropdown-nav">
             <ul>
-              <li><a href="#about-section" class="tap-target">About</a></li>
               <li>
-                <a href="#projects-section" class="tap-target">Projects</a>
+                <a href="#about-section" class="closeDropdownOnClick tap-target"
+                  >About</a
+                >
               </li>
-              <li><a href="#contact-section" class="tap-target">Contact</a></li>
+              <li>
+                <a
+                  href="#projects-section"
+                  class="closeDropdownOnClick tap-target"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact-section"
+                  class="closeDropdownOnClick tap-target"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </nav>
           <span class="social-links header-dropdown-social-links">
             <a
               href="https://linkedin.com/in/daniel-howorth"
-              class="tap-target"
+              class="closeDropdownOnClick tap-target"
               target="_blank"
             >
               <!-- embedded SVGs so that color can be changed on hover -->
@@ -134,7 +152,7 @@
               <div class="visually-hidden">LinkedIn link</div></a
             ><a
               href="https://github.com/daniel-howorth"
-              class="tap-target"
+              class="closeDropdownOnClick tap-target"
               target="_blank"
             >
               <svg
