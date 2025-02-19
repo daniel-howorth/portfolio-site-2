@@ -684,7 +684,6 @@ footer {
 .skills-grid {
   grid-template-columns: repeat(4, 150px);
   gap: 16px;
-  /* grid-auto-flow: row dense; */
   place-content: center;
 }
 
@@ -695,11 +694,13 @@ footer {
   aspect-ratio: 1/1;
   border: 5px solid var(--color-accent);
   border-radius: 20px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill__icon {
+  width: 70%;
   max-width: 100%;
 }
 
@@ -708,12 +709,6 @@ footer {
     grid-template-columns: repeat(2, 150px);
   }
 }
-
-/* @media (max-width: 550px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 100px);
-  }
-} */
 
 /* === Tablet Styles === */
 
@@ -748,6 +743,10 @@ footer {
 
   .page-section-heading {
     margin-bottom: 3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 120px);
   }
 
   .footer__content {
