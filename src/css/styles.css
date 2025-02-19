@@ -693,6 +693,14 @@ footer {
   color: var(--color-white);
   text-align: center;
   aspect-ratio: 1/1;
+  border: 5px solid var(--color-accent);
+  border-radius: 20px;
+  display: grid;
+  place-content: center;
+}
+
+.skill__icon {
+  max-width: 100%;
 }
 
 @media (max-width: calc(((648 / 16) + 10) * 1rem)) {
@@ -700,6 +708,12 @@ footer {
     grid-template-columns: repeat(2, 150px);
   }
 }
+
+/* @media (max-width: 550px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 100px);
+  }
+} */
 
 /* === Tablet Styles === */
 
