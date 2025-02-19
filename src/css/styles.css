@@ -550,6 +550,10 @@ nav.header-nav a {
   display: inline-block;
 }
 
+#lets-connect-link-wrapper {
+  white-space: nowrap;
+}
+
 @media (max-width: calc(1260 / 16 * 1rem)) {
   .txt-img-row--about {
     flex-direction: column;
