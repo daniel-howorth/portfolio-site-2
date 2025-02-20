@@ -683,7 +683,7 @@ footer {
 
 .skills-grid {
   grid-template-columns: repeat(4, 9.375rem);
-  gap: 16px;
+  gap: 32px;
   place-content: center;
 }
 
