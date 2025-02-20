@@ -682,22 +682,51 @@ footer {
 }
 
 .skills-grid {
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: repeat(4, 9.375rem);
   gap: 16px;
   place-content: center;
 }
 
 .skill {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  text-align: center;
+  perspective: 1000px;
+  cursor: pointer;
   aspect-ratio: 1/1;
-  border: 5px solid var(--color-accent);
-  border-radius: 20px;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+  -webkit-tap-highlight-color: transparent;
+}
+
+.skill__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.skill__front,
+.skill__back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
+  background-color: var(--color-black);
+  border: 5px solid var(--color-accent);
+  border-radius: 20px;
+}
+
+.skill__back {
+  transform: rotateY(180deg);
+  color: var(--color-accent);
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 32px;
+}
+
+.skill.flipped .skill__inner {
+  transform: rotateY(180deg);
 }
 
 .skill__icon {
@@ -707,7 +736,7 @@ footer {
 
 @media (max-width: calc(((648 / 16) + 10) * 1rem)) {
   .skills-grid {
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 9.375rem);
   }
 }
 
@@ -747,7 +776,11 @@ footer {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, 120px);
+    grid-template-columns: repeat(2, 7.5rem);
+  }
+
+  .skill__back {
+    font-size: 1rem;
   }
 
   .footer__content {
