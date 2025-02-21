@@ -20,8 +20,8 @@
   </head>
   <body>
     <div class="app-wrapper">
-      <div class="header-wrapper">
-        <header>
+      <header>
+        <div class="header__content">
           <a
             href="#intro-section"
             id="home-btn"
@@ -30,7 +30,7 @@
             <span class="typed-text">Daniel Howorth</span>
             <div class="visually-hidden">Home button</div>
           </a>
-          <nav class="header-nav">
+          <nav class="header__nav">
             <ul>
               <li><a href="#about-section" class="tap-target">About</a></li>
               <li><a href="#skills-section" class="tap-target">Skills</a></li>
@@ -40,7 +40,7 @@
               <li><a href="#contact-section" class="tap-target">Contact</a></li>
             </ul>
           </nav>
-          <span class="social-links header-social-links">
+          <span class="header__social-links">
             <a
               href="https://linkedin.com/in/daniel-howorth"
               class="tap-target"
@@ -94,15 +94,15 @@
             id="header-menu-btn"
             class="tap-target"
             aria-expanded="false"
-            aria-controls="dropdown-menu"
+            aria-controls="header__dropdown-menu"
           >
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </button>
-        </header>
-        <div class="dropdown-menu" id="header-dropdown-menu">
-          <nav class="dropdown-nav">
+        </div>
+        <div class="header__dropdown-menu" id="header-dropdown-menu">
+          <nav class="header__nav header__nav--dropdown">
             <ul>
               <li>
                 <a href="#about-section" class="closeDropdownOnClick tap-target"
@@ -132,7 +132,7 @@
               </li>
             </ul>
           </nav>
-          <span class="social-links header-dropdown-social-links">
+          <span class="header__social-links header__social-links--dropdown">
             <a
               href="https://linkedin.com/in/daniel-howorth"
               class="closeDropdownOnClick tap-target"
@@ -183,7 +183,7 @@
             </a>
           </span>
         </div>
-      </div>
+      </header>
       <div class="main">
         <section class="page-section u-flex-items-centred" id="intro-section">
           <div class="page-section-content-wrapper"></div>

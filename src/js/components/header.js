@@ -2,7 +2,7 @@ import Dropdown from "../modules/dropdown.js";
 import { elementsExist } from "../modules/helpers.js";
 
 const headerMenuBtn = document.querySelector("#header-menu-btn");
-const headerDropdownMenu = document.querySelector(".dropdown-menu");
+const headerDropdownMenu = document.querySelector(".header__dropdown-menu");
 
 const closeDropdownElements = document.querySelectorAll(
   ".closeDropdownOnClick"
