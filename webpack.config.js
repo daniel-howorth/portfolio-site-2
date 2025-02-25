@@ -6,7 +6,7 @@ module.exports = {
   // the entry points - name/value pairs
   entry: {
     index: "./src/js/index.js",
-    // can have multiple entry points
+    "nutrition-app": "./src/js/nutrition-app.js",
   },
   output: {
     // name will refer to the name used in the entry name/value pair
@@ -38,6 +38,11 @@ module.exports = {
       template: "./src/index.html", // The source HTML file.
       filename: "index.html", // The name of the output HTML file.
       chunks: ["index"], // Specifies which entry point's bundle(s) to include in this HTML file.
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/nutrition-app.html", // The source HTML file.
+      filename: "nutrition-app.html", // The name of the output HTML file.
+      chunks: ["nutrition-app"], // Specifies which entry point's bundle(s) to include in this HTML file.
     }),
     // only need one object for the css plugin
     new MiniCssExtractPlugin({

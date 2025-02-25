@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Quentin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <title>Daniel Howorth Portfolio | Frontend Web Developer</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <header>
+        <div class="header__content">
+          <a
+            href="#intro-section"
+            id="home-btn"
+            class="closeDropdownOnClick tap-target"
+          >
+            <span class="typed-text">Daniel Howorth</span>
+            <div class="visually-hidden">Home button</div>
+          </a>
+          <!-- <nav class="header__nav">
+            <ul>
+              <li><a href="#about-section" class="tap-target">About</a></li>
+            </ul>
+          </nav> -->
+          <span class="header__social-links">
+            <a
+              href="https://linkedin.com/in/daniel-howorth"
+              class="tap-target"
+              target="_blank"
+            >
+              <!-- embedded SVGs so that color can be changed on hover -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <div class="visually-hidden">LinkedIn link</div></a
+            ><a
+              href="https://github.com/daniel-howorth"
+              class="tap-target"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <div class="visually-hidden">GitHub link</div>
+            </a>
+          </span>
+          <button
+            id="header-menu-btn"
+            class="tap-target"
+            aria-expanded="false"
+            aria-controls="header__dropdown-menu"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div class="header__dropdown-menu" id="header-dropdown-menu">
+          <nav class="header__nav header__nav--dropdown">
+            <!-- <ul>
+              <li>
+                <a href="#about-section" class="closeDropdownOnClick tap-target"
+                  >About</a
+                >
+              </li>
+            </ul> -->
+          </nav>
+          <span class="header__social-links header__social-links--dropdown">
+            <a
+              href="https://linkedin.com/in/daniel-howorth"
+              class="closeDropdownOnClick tap-target"
+              target="_blank"
+            >
+              <!-- embedded SVGs so that color can be changed on hover -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <div class="visually-hidden">LinkedIn link</div></a
+            ><a
+              href="https://github.com/daniel-howorth"
+              class="closeDropdownOnClick tap-target"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-github"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              <div class="visually-hidden">GitHub link</div>
+            </a>
+          </span>
+        </div>
+      </header>
+      <div class="main">
+        <section class="page-section">
+          <div class="page-section-content-wrapper">
+            <div class="page-section-heading">
+              <div class="page-section-heading__title-wrapper">
+                <h2 class="page-section-heading__title">Nutrition App</h2>
+              </div>
+            </div>
+            <div class="u-flex-column-fullwidth u-flex-gap-fluid">
+              <div class="txt-img-row txt-img-row--alternate-direction">
+                <div class="txt-img-row__cell txt-img-row__cell--txt">
+                  <h2>Overview</h2>
+                  <p>
+                    This nutrition app enables users to discover personalized
+                    recipes based on their dietary needs. Whether following a
+                    nutritional program for athletic goals or adhering to
+                    specific diets like vegetarian, pescatarian, or paleo, users
+                    can easily find tailored meal ideas. It features a
+                    responsive and accessible interface and integrates
+                    third-party APIs for recipe searches and detailed
+                    nutritional breakdowns. I built this project from scratch
+                    using HTML, CSS, and JavaScript, and I harnessed the power
+                    of Firebase for full-stack functionality. This project
+                    strengthened my skills in responsive design, modular coding,
+                    and API integration.
+                  </p>
+                </div>
+                <div
+                  class="txt-img-row__cell txt-img-row__cell--img u-flex-items-centred"
+                >
+                  <div class="txt-img-row__img-wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="page-section-content-wrapper">
+            <div class="u-flex-column-fullwidth u-flex-gap-fluid">
+              <div class="txt-img-row txt-img-row--alternate-direction">
+                <div class="txt-img-row__cell txt-img-row__cell--txt">
+                  <h2>Motivation & Goals</h2>
+                  <p>
+                    This project was inspired by my own experience of trying to
+                    follow specific dietary requirements but struggling to find
+                    a variety of appealing meals. There are services available
+                    to help in such scenarios, such as professional
+                    nutritionists and food delivery services, but these are
+                    often highly expensive. I realised many people share this
+                    experience and ultimately fail to reach their goals as a
+                    result, so I wanted to create a free tool that would remove
+                    these barriers and empower people to easily discover
+                    nutritious, satisfying recipes that are tailored to their
+                    personal needs.
+                  </p>
+                </div>
+                <div
+                  class="txt-img-row__cell txt-img-row__cell--img u-flex-items-centred"
+                >
+                  <div class="txt-img-row__img-wrapper"></div>
+                </div>
+              </div>
+              <div class="txt-img-row txt-img-row--alternate-direction">
+                <div class="txt-img-row__cell txt-img-row__cell--txt">
+                  <p>
+                    While my goal was to create a polished product that people
+                    find useful and valuable, this project, like all my
+                    projects, was also a learning exercise. I specifically
+                    wanted to deepen my understanding of APIs and how to
+                    integrate them into my apps to enhance their functionality
+                    and deliver a richer user experience.
+                  </p>
+                </div>
+                <div
+                  class="txt-img-row__cell txt-img-row__cell--img u-flex-items-centred"
+                >
+                  <div class="txt-img-row__img-wrapper"></div>
+                </div>
+              </div>
+              <div class="txt-img-row txt-img-row--alternate-direction">
+                <div class="txt-img-row__cell txt-img-row__cell--txt">
+                  <p>
+                    Responsive design was a top priority for me, ensuring the
+                    app delivers a seamless experience across desktops, tablets,
+                    and mobile devices. I achieved this by using relative units,
+                    fluid typography, media queries, and modern CSS layout
+                    techniques like Flexbox. This approach guarantees the app
+                    looks great and remains fully functional, no matter the
+                    screen size.
+                  </p>
+                </div>
+                <div
+                  class="txt-img-row__cell txt-img-row__cell--img u-flex-items-centred"
+                >
+                  <div class="txt-img-row__img-wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer__content">
+          <p>© 2025 Daniel Howorth</p>
+          <div class="footer__social-links">
+            <a href="" class="footer__social-link tap-target">linkedin</a>
+            <a href="" class="footer__social-link tap-target">github</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

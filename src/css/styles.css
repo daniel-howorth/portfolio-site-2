@@ -508,6 +508,10 @@ header {
 .txt-img-row__cell--txt {
   font-size: var(--font-size-medium);
   line-height: 1.75;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0;
 }
 
 .txt-img-row__cell--txt h2 {
@@ -544,7 +548,7 @@ header {
 
 /* === About Styles === */
 
-.txt-img-row--about:nth-child(even) {
+.txt-img-row--alternate-direction:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -588,10 +592,6 @@ header {
 
 .txt-img-row--projects .txt-img-row__cell--txt {
   font-size: max(var(--font-size-medium), 1.125rem);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px 0;
 }
 
 .txt-img-row--projects .txt-img-row__cell--txt p {
