@@ -641,6 +641,10 @@ header {
   max-width: calc(450 / 16 * 1rem);
 }
 
+.content-row--projects .content-row__txt-cell .btn {
+  margin-bottom: 32px;
+}
+
 @media (max-width: calc(1000 / 16 * 1rem)) {
   .content-row--projects {
     flex-direction: column;
