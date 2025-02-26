@@ -149,6 +149,7 @@ p {
   font-size: 2rem;
   gap: 0.5em;
   margin-bottom: 0.7em;
+  padding-top: 32px;
 }
 
 .heading--centred {
@@ -159,6 +160,7 @@ p {
 
 .heading--large {
   font-size: 5rem;
+  margin-bottom: 1em;
 }
 
 .heading--medium {
