@@ -402,7 +402,6 @@ header {
   border: 3px solid black;
   border-radius: 50%;
   overflow: hidden;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
 }
 
 #profile-img img {
@@ -530,7 +529,6 @@ header {
   background-color: var(--color-white);
   border-radius: 5px;
   padding: 2rem;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
 }
 
 .content-row {
@@ -786,7 +784,6 @@ footer {
   perspective: 1000px;
   cursor: pointer;
   aspect-ratio: 1/1;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
   -webkit-tap-highlight-color: transparent;
 }
 
