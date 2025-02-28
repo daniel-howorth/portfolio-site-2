@@ -709,7 +709,7 @@ header {
   gap: 7rem;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: calc(1400 / 16 * 1rem)) {
   .content-row--project-details {
     flex-direction: column;
     gap: clamp(2rem, 4vw, 5rem);
@@ -732,16 +732,13 @@ header {
   }
 }
 
-@media (max-width: 400px) {
-  .project-details-heading .heading__title-wrapper {
-    /* width: min-content; */
-  }
-
+@media (max-width: calc(400 / 16 * 1rem)) {
   .project-details-heading .heading__title {
     line-height: 1.25;
     width: min-content;
   }
 }
+
 /* === Footer Styles === */
 
 footer {
