@@ -699,6 +699,13 @@ header {
 
 /* === Project Styles === */
 
+.project-hero {
+  width: 100%;
+  max-width: 1500px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: clamp(2rem, 20vw, 5rem);
+}
+
 .content-row--project-details h3 {
   font-size: var(--font-size-xl);
   font-weight: 700;
