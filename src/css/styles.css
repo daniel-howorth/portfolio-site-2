@@ -699,14 +699,28 @@ header {
 
 /* === Project Styles === */
 
+.content-row--project-details h3 {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
 .content-row--project-details {
   gap: 7rem;
 }
 
-.content-row--project-details ul,
-li,
-p,
-a {
+.content-row--project-details ul {
+  margin-bottom: 1rem;
+}
+
+.content-row--project-details li {
+  margin-bottom: 1rem;
+}
+
+.content-row--project-details p {
+  margin-bottom: 1rem;
+}
+
+.content-row--project-details a {
   margin-bottom: 1rem;
 }
 
