@@ -469,11 +469,6 @@ header {
   transform: translateX(0.8em);
 }
 
-.heading__title-wrapper {
-  /* position: relative; */
-  /* width: fit-content; */
-}
-
 .heading__title {
   font-size: inherit;
   font-weight: 500;
@@ -732,7 +727,10 @@ header {
 
 @media (max-width: calc(400 / 16 * 1rem)) {
   .project-details-heading .heading__title {
-    line-height: 1.25;
+    width: min-content;
+  }
+
+  #nutrition-app-heading .heading__title {
     width: min-content;
   }
 }
@@ -958,7 +956,7 @@ footer {
 }
 
 .u-drop-shadow {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.65));
 }
 
 .visually-hidden:not(:focus):not(:active) {

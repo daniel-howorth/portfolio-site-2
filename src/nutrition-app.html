@@ -161,7 +161,10 @@
       <div class="main">
         <section class="page-section">
           <div class="page-section-content-wrapper">
-            <div class="heading heading--centred heading--large">
+            <div
+              id="nutrition-app-heading"
+              class="heading heading--centred heading--large"
+            >
               <h1 class="heading__title">Nutrition App</h1>
             </div>
             <div class="u-flex-column-fullwidth u-flex-gap-fluid">
@@ -217,13 +220,31 @@
                   </p>
                 </div>
                 <div class="content-row__cell content-row__img-cell">
-                  <div class="img-wrapper">
-                    <img
-                      src="./assets/images/projects/nutrition-app/search-recipes/search-recipes@1x.jpg"
-                      alt=""
-                      class="u-drop-shadow"
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/avif/search-recipes-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/avif/search-recipes-desktop@2x.avif
+                      "
                     />
-                  </div>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/webp/search-recipes-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/webp/search-recipes-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/search-recipes/desktop/jpg/search-recipes-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/jpg/search-recipes-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/search-recipes/desktop/jpg/search-recipes-desktop@2x.jpg
+                      "
+                      alt="search recipes page"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div
@@ -240,13 +261,31 @@
                   </p>
                 </div>
                 <div class="content-row__cell content-row__img-cell">
-                  <div class="img-wrapper">
-                    <img
-                      src="./assets/images/projects/nutrition-app/search-recipes/search-recipes@1x.jpg"
-                      alt=""
-                      class="u-drop-shadow"
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/avif/analyse-recipes-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/avif/analyse-recipes-desktop@2x.avif
+                      "
                     />
-                  </div>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/webp/analyse-recipes-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/webp/analyse-recipes-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/analyse-recipes/desktop/jpg/analyse-recipes-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/jpg/analyse-recipes-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/analyse-recipes/desktop/jpg/analyse-recipes-desktop@2x.jpg
+                      "
+                      alt="analyse recipes page"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div
@@ -264,13 +303,206 @@
                   </p>
                 </div>
                 <div class="content-row__cell content-row__img-cell">
-                  <div class="img-wrapper">
-                    <img
-                      src="./assets/images/projects/nutrition-app/search-recipes/search-recipes@1x.jpg"
-                      alt=""
-                      class="u-drop-shadow"
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/avif/calculate-macros-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/avif/calculate-macros-desktop@2x.avif
+                      "
                     />
-                  </div>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/webp/calculate-macros-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/webp/calculate-macros-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/calculate-macros/desktop/jpg/calculate-macros-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/jpg/calculate-macros-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/calculate-macros/desktop/jpg/calculate-macros-desktop@2x.jpg
+                      "
+                      alt="calculate macros page"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="page-section-content-wrapper">
+            <div
+              class="heading heading--medium heading--corrected project-details-heading"
+            >
+              <h2 class="heading__title">Tech Stack</h2>
+            </div>
+            <div class="project-details-column u-flex-column-fullwidth">
+              <div
+                class="content-row content-row--project-details content-row--alternate-direction"
+              >
+                <div class="content-row__cell content-row__txt-cell">
+                  <p>HTML CSS JavaScript Firebase Rest APIs Webpack Git</p>
+                  <p>
+                    The app is primarily built with modern HTML, CSS, and
+                    JavaScript, leveraging ES6 features for cleaner, more
+                    efficient code. I used Webpack to bundle the code, which
+                    streamlined the development process and optimised
+                    performance.
+                  </p>
+                </div>
+                <div class="content-row__cell content-row__img-cell">
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/avif/saved-recipes-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/avif/saved-recipes-desktop@2x.avif
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/webp/saved-recipes-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/webp/saved-recipes-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/saved-recipes/desktop/jpg/saved-recipes-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/jpg/saved-recipes-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/saved-recipes/desktop/jpg/saved-recipes-desktop@2x.jpg
+                      "
+                      alt="saved recipes page"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div
+                class="content-row content-row--project-details content-row--alternate-direction"
+              >
+                <div class="content-row__cell content-row__txt-cell">
+                  <p>
+                    To expand the functionality of the app and to support the
+                    recipe search and recipe analysis features, I integrated two
+                    third-party APIs, using the Fetch API to handle requests
+                    efficiently.
+                  </p>
+                  <p>Links to APIs.</p>
+                  <p>
+                    I built the backend using Firebase, which was an ideal
+                    choice due to its scalability and simplified server
+                    management. I utilized several Firebase services, including
+                    Authentication for secure user sign-in, Firestore to store
+                    user accounts and saved recipes, Cloud Functions for
+                    serverless API requests, and Hosting for smooth, reliable
+                    app deployment.
+                  </p>
+                </div>
+                <div class="content-row__cell content-row__img-cell">
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/avif/view-saved-recipe-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/avif/view-saved-recipe-desktop@2x.avif
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/webp/view-saved-recipe-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/webp/view-saved-recipe-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/view-saved-recipe/desktop/jpg/view-saved-recipe-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/jpg/view-saved-recipe-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/view-saved-recipe/desktop/jpg/view-saved-recipe-desktop@2x.jpg
+                      "
+                      alt="view saved recipe page"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page-section">
+          <div class="page-section-content-wrapper">
+            <div
+              class="heading heading--medium heading--corrected project-details-heading"
+            >
+              <h2 class="heading__title">Lessons Learned</h2>
+            </div>
+            <div class="project-details-column u-flex-column-fullwidth">
+              <div
+                class="content-row content-row--project-details content-row--alternate-direction"
+              >
+                <div class="content-row__cell content-row__txt-cell">
+                  <p>
+                    By leveraging Firebase, I avoided the need to build a server
+                    from scratch and was able to focus on the frontend, where my
+                    strengths lie. While I plan to continue developing my
+                    Node.js skills, working with Firebase has given me the
+                    confidence to build full-stack applications and bring new
+                    project ideas to life more efficiently going forward.
+                  </p>
+                  <p>
+                    Throughout the project, I gained a deeper understanding of
+                    modularity and the importance of well-organized code. I
+                    consistently broke down my JavaScript into manageable
+                    modules, importing them where needed to keep the codebase
+                    clean and maintainable. I also learned how to effectively
+                    use Webpack to bundle these modules, optimize performance,
+                    and streamline the development process. While my ability to
+                    write modular code is an ongoing process with plenty of room
+                    for improvement, this project gave me a solid foundation to
+                    build on as I continue refining my skills.
+                  </p>
+                  <p>
+                    This project has a strong focus on APIs, harnessing two
+                    third-party services to enhance functionality. It’s been an
+                    invaluable learning experience, helping me understand how to
+                    seamlessly integrate APIs using the Fetch API. This skill
+                    significantly broadens the potential of my future projects,
+                    allowing me to expand functionality and create more dynamic,
+                    data-driven applications.
+                  </p>
+                </div>
+                <div class="content-row__cell content-row__img-cell">
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/avif/manage-account-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/avif/manage-account-desktop@2x.avif
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/webp/manage-account-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/webp/manage-account-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@2x.jpg
+                      "
+                      alt="search recipes page"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
