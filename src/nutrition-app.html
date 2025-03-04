@@ -338,6 +338,106 @@
             <div
               class="heading heading--medium heading--corrected project-details-heading"
             >
+              <h2 class="heading__title">Features</h2>
+            </div>
+            <div class="project-details-column u-flex-column-fullwidth">
+              <div
+                class="content-row content-row--project-details content-row--alternate-direction"
+              >
+                <div class="content-row__cell content-row__txt-cell">
+                  <ul>
+                    <li>
+                      <span class="u-bold">Search Recipes.</span> Users can
+                      search for recipes tailored to their preferences,
+                      including specific diet types, nutritional requirements,
+                      and food intolerances. This feature uses the Spoonacular
+                      API to retrieve relevant recipes based on the user’s
+                      input, ensuring a personalized experience.
+                    </li>
+                    <li>
+                      <span class="u-bold">Calculate Macro Targets.</span> Users
+                      can calculate their macronutrient targets based on their
+                      personal details and fitness goals. Whether they aim to
+                      lose weight, gain muscle, or maintain their current
+                      physique, the tool provides a personalized breakdown of
+                      their daily calorie, protein, carbohydrate, and fat intake
+                      to help them stay on track.
+                    </li>
+                    <li>
+                      <span class="u-bold">Analyse Recipes.</span> Users can
+                      easily obtain a detailed nutritional breakdown of any
+                      recipe. By simply entering the quantity of each
+                      ingredient, the tool returns the key nutritional values
+                      such as calories, protein, carbohydrates, and fats. This
+                      feature is powered by the CalorieNinjas API, ensuring
+                      accurate and reliable nutritional insights.
+                    </li>
+                    <li>
+                      <span class="u-bold">Save Recipes. </span> Users can save
+                      their favorite recipes for easy access later. This feature
+                      leverages Firebase Firestore, a scalable document-based
+                      database, to securely store saved recipes. Firestore’s
+                      built-in functions handle saving, retrieving, and deleting
+                      recipes seamlessly.
+                    </li>
+                    <li>
+                      <span class="u-bold"
+                        >User Authenitcation and Guest Access.</span
+                      >
+                      Users can create an account to securely log in and save
+                      their favorite recipes for future use. Alternatively, they
+                      can log in as a guest, though certain features, like
+                      saving recipes, will be disabled. This functionality is
+                      powered by Firebase Authentication, ensuring a secure
+                      login experience.
+                    </li>
+                    <li>
+                      <span class="u-bold">Account Management.</span> Users have
+                      the option to delete their account along with all
+                      associated data if desired. In the future, this feature
+                      could be expanded to store personal details such as
+                      weight, height, and fitness goals, making the 'Calculate
+                      Macros' tool more streamlined by automatically adjusting
+                      as their goals evolve over time.
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-row__cell content-row__img-cell">
+                  <picture class="img-wrapper u-drop-shadow">
+                    <source
+                      type="image/avif"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/avif/manage-account-desktop@1x.avif,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/avif/manage-account-desktop@2x.avif
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/webp/manage-account-desktop@1x.webp,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/webp/manage-account-desktop@2x.webp
+                      "
+                    />
+                    <img
+                      src="./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@1x.jpg"
+                      srcset="
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@1x.jpg,
+                        ./assets/images/projects/nutrition-app/manage-account/desktop/jpg/manage-account-desktop@2x.jpg
+                      "
+                      alt="search recipes page"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="page-section-content-wrapper">
+            <div
+              class="heading heading--medium heading--corrected project-details-heading"
+            >
               <h2 class="heading__title">Tech Stack</h2>
             </div>
             <div class="project-details-column u-flex-column-fullwidth">
@@ -345,7 +445,15 @@
                 class="content-row content-row--project-details content-row--alternate-direction"
               >
                 <div class="content-row__cell content-row__txt-cell">
-                  <p>HTML CSS JavaScript Firebase Rest APIs Webpack Git</p>
+                  <ul>
+                    <li class="u-bold">HTML</li>
+                    <li class="u-bold">CSS</li>
+                    <li class="u-bold">JavaScript</li>
+                    <li class="u-bold">Firebase</li>
+                    <li class="u-bold">Rest APIs</li>
+                    <li class="u-bold">Git</li>
+                    <li class="u-bold">Webpack</li>
+                  </ul>
                   <p>
                     The app is primarily built with modern HTML, CSS, and
                     JavaScript, leveraging ES6 features for cleaner, more

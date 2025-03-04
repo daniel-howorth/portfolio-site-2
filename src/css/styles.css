@@ -698,6 +698,16 @@ header {
   gap: 7rem;
 }
 
+.content-row--project-details ul,
+li,
+p {
+  margin-bottom: 1rem;
+}
+
+.content-row--project-details .content-row__img-cell {
+  align-items: flex-start;
+}
+
 .project-details-column {
   gap: 7rem;
 }
@@ -957,6 +967,10 @@ footer {
 
 .u-drop-shadow {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.65));
+}
+
+.u-bold {
+  font-weight: 700;
 }
 
 .visually-hidden:not(:focus):not(:active) {
