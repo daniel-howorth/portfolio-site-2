@@ -587,6 +587,7 @@ header {
 
 .link {
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* === About Styles === */
@@ -615,6 +616,10 @@ header {
   .content-row--about:nth-child(even) {
     flex-direction: column;
   }
+}
+
+.content-row--about .link {
+  text-decoration: underline;
 }
 
 /* === Projects Section Styles === */
@@ -700,7 +705,8 @@ header {
 
 .content-row--project-details ul,
 li,
-p {
+p,
+a {
   margin-bottom: 1rem;
 }
 
@@ -917,6 +923,10 @@ footer {
   }
 
   .btn:hover {
+    color: var(--color-accent);
+  }
+
+  .content-row--project-details .link:hover {
     color: var(--color-accent);
   }
 
