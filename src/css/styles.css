@@ -710,7 +710,6 @@ header {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
-  /* margin-top: 24px; */
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -719,7 +718,6 @@ header {
   width: 12rem;
   border-radius: 20px;
   padding: 20px;
-  padding-bottom: 0;
   background-color: var(--color-white);
   border: none;
   display: flex;
@@ -728,7 +726,7 @@ header {
   justify-content: center;
 }
 
-.content-row--project-details .device-img-controls__control h3 {
+.content-row--project-details .device-img-controls__control span {
   font-size: var(--font-size-large);
   font-weight: 600;
 }
