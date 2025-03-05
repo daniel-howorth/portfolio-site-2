@@ -173,12 +173,14 @@
                 alt="Nutrition App login page"
               />
             </div>
+            <div
+              class="heading heading--medium heading--corrected project-details-heading"
+            >
+              <h2 class="heading__title">Overview</h2>
+            </div>
             <div class="u-flex-column-fullwidth u-flex-gap-fluid">
               <div class="content-row content-row--project-details">
-                <div class="content-row__cell content-row__txt-cell">
-                  <div class="heading heading--medium heading--corrected">
-                    <h2 class="heading__title">Overview</h2>
-                  </div>
+                <div class="content-row__cell content-row__txt-cell u-flex-1_5">
                   <p>
                     This nutrition app enables users to discover personalized
                     recipes based on their dietary needs. Whether following a
@@ -206,7 +208,32 @@
                     >View Source Code</a
                   >
                 </div>
-                <div class="content-row__cell"></div>
+                <div
+                  class="content-row__cell u-flex-items-centred u-flex-column-fullwidth"
+                >
+                  <h3 id="device-img-controls-title">Device View</h3>
+
+                  <div class="device-img-controls">
+                    <button
+                      class="device-img-controls__control device-img-controls__control--mobile tap-target"
+                    >
+                      <img
+                        src="./assets/icons/mobile-icon.svg"
+                        alt="Mobile icon"
+                      />
+                      <h3>Mobile</h3>
+                    </button>
+                    <button
+                      class="device-img-controls__control device-img-controls__control--desktop active tap-target"
+                    >
+                      <img
+                        src="./assets/icons/laptop-icon.svg"
+                        alt="Laptop icon"
+                      />
+                      <h3>Desktop</h3>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
