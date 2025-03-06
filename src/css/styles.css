@@ -565,6 +565,10 @@ header {
   width: 100%;
 }
 
+.img-wrapper--mobile {
+  width: 55%;
+}
+
 .btn {
   font-size: var(--font-size-base);
   color: var(--color-white);
@@ -793,7 +797,8 @@ header {
 }
 
 figcaption {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
+  font-size: max(var(--font-size-base), 16px);
   font-style: italic;
   color: var(--color-gray-200);
   text-align: center;
