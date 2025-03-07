@@ -59,4 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
   jumpElements.forEach((element) => {
     observer.observe(element);
   });
+
+  // Observe point left elements
+  const pointLeftElements = document.querySelectorAll(".point-left");
+  pointLeftElements.forEach((element) => {
+    observer.observe(element);
+  });
 });
