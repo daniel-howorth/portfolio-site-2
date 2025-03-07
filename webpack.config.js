@@ -12,6 +12,7 @@ module.exports = {
     // name will refer to the name used in the entry name/value pair
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
     clean: true,
   },
   mode: "development",
@@ -27,7 +28,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|avif|webp|jpeg|gif|woff|woff2)$/i,
         type: "asset/resource",
       },
     ],
