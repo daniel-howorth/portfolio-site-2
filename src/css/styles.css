@@ -947,6 +947,7 @@ footer {
   cursor: pointer;
   aspect-ratio: 1/1;
   -webkit-tap-highlight-color: transparent;
+  contain: layout;
 }
 
 .skill__inner {
