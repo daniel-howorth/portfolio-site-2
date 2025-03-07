@@ -628,14 +628,27 @@ header {
   text-decoration: none;
 }
 
+.back-link-padding-wrapper {
+  padding: 0 3rem 3rem;
+}
+
+.back-link-maxwidth-wrapper {
+  max-width: 1750px;
+  margin: auto;
+}
+
 .back-link {
   font-size: var(--font-size-large);
   font-weight: 700;
   width: fit-content;
-  margin-left: 3rem;
-  margin-bottom: 3rem;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 1750px) {
+  .back-link {
+    margin-left: 0rem;
+  }
 }
 
 .arrow-icon--back {
@@ -1055,10 +1068,8 @@ footer {
     padding: 16px;
   }
 
-  .back-link {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
+  .back-link-padding-wrapper {
+    padding: 2rem 1.5rem 1.5rem;
   }
 }
 
