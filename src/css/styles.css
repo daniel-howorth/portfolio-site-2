@@ -648,18 +648,6 @@ header {
   width: 100%;
 }
 
-.back-link:hover {
-  color: var(--color-accent);
-}
-
-@media (max-width: 550px) {
-  .back-link {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-  }
-}
-
 /* === About Styles === */
 
 .content-row--about .content-row__txt-cell {
@@ -1067,6 +1055,12 @@ footer {
   .content-row--project-details ul {
     padding: 16px;
   }
+
+  .back-link {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
 }
 
 /* === Hover Styles === */
@@ -1107,6 +1101,10 @@ footer {
   .contact-form-card .btn:hover {
     color: var(--color-primary);
     background-color: var(--color-alt);
+  }
+
+  .back-link:hover {
+    color: var(--color-accent);
   }
 }
 
