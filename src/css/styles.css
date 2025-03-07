@@ -305,6 +305,29 @@ header {
   }
 }
 
+/* hide project page header nav, show menu button. project page header is larger than default header so should hide sooner on shrinking screens */
+@media (max-width: calc(1250 / 16 * 1rem)) {
+  .header--project-page .header__nav {
+    display: none;
+  }
+
+  .header--project-page .header__nav--dropdown {
+    display: block;
+  }
+
+  .header--project-page .header__social-links {
+    display: none;
+  }
+
+  .header--project-page .header__social-links--dropdown {
+    display: flex;
+  }
+
+  .header--project-page #header-menu-btn {
+    display: flex;
+  }
+}
+
 .header__dropdown-menu {
   background-color: inherit;
   max-height: 0;
@@ -344,9 +367,20 @@ header {
   text-decoration: none;
 }
 
-/* hides menu if open and screen expanded */
+/* hides drodown menu if open and screen expanded. overrides for project page dropdown, which is larger so should be shown on larger screens */
 @media (min-width: calc(1000 / 16 * 1rem)) {
   .header__dropdown-menu.active {
+    display: none;
+  }
+
+  .header--project-page .header__dropdown-menu.active {
+    display: block;
+  }
+}
+
+/* hides project page dropdown menu if open and screen expanded. */
+@media (min-width: calc(1250 / 16 * 1rem)) {
+  .header--project-page .header__dropdown-menu.active {
     display: none;
   }
 }
