@@ -254,10 +254,6 @@ header {
   margin-left: 16px;
 }
 
-#header-menu-btn:focus {
-  outline: none;
-}
-
 #header-menu-btn .bar {
   width: 100%;
   height: 2px;
