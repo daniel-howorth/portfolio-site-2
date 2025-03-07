@@ -695,11 +695,6 @@ header {
 
 /* === Projects Section Styles === */
 
-.content-row--projects .img-wrapper--link {
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-}
-
 .content-row--projects .content-row__txt-cell {
   font-size: max(var(--font-size-medium), 1.125rem);
 }
@@ -1094,10 +1089,6 @@ footer {
 
   #header-menu-btn:hover .bar {
     background-color: var(--color-accent);
-  }
-
-  .content-row--projects .img-wrapper--link:hover {
-    transform: scale(1.05);
   }
 
   .btn:hover {
