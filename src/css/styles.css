@@ -791,6 +791,7 @@ header {
 .content-row--project-details .device-img-controls__control span {
   font-size: var(--font-size-large);
   font-weight: 600;
+  color: var(--color-black);
 }
 
 .device-img-controls__control--mobile {
